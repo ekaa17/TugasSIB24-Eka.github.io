@@ -18,12 +18,20 @@ body {
 }
 
 .logo a {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 50px;
   float: right;
   font-weight: bold;
-  font-family: 'Arial';
+  font-family: 'brush script';
   color: #0f0f0f;
+}
+
+.footer {
+  font-size: 20px;
+  font-weight: 50px;
+  float: center;
+  font-family: 'brush script';
+  color: #000000;
 }
 
 .menu {
