@@ -15,6 +15,7 @@
           <ul>
             <li><a href="form.html">Form</a></li>
             <li><a href="jsdasar.html">JavaScript</a></li>
+            <li><a href="product.html">ProductAPI</a></li>
           </ul>
         </div>
       </div>
@@ -22,49 +23,24 @@
 
     <div class="slides">
       <div class="slide">
-        <img src="e.jpg" alt="" />
+        <img src="img/e.jpg" alt="" />
       </div>
       <div class="slide">
-        <img src="i.webp" alt="" />
+        <img src="img/i.webp" alt="" />
       </div>
       <div class="slide">
-        <img src="y.png" alt="" />
+        <img src="img/y.png" alt="" />
       </div>
       <div class="navigation">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(-1)">&#10095;</a>
       </div>
     </div>
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName('slide');
-        if (n > slides.length) {
-          slidesIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = 'none';
-        }
-        slides[slideIndex - 1].style.display = 'block';
-      }
-    </script>
-    <br />
-    <br />
-    <br />
 
     <footer>
       <div class="footer"><a href="">Tugas Modul MSIB_Eka Pratama Putra Arkatama Multi Solusindo 2024</a></div>
       
     </footer>
+    <script src="carousel.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #userTable th, #userTable td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #userTable th {
+    background-color: #e6571f;
+    font-weight: bold;
+  }
+  
+  #userTable tr:nth-child(even) {
+    background-color: #7c8df0;
+  }
+  
+  #userTable tbody tr:hover {
+    background-color: #7c8df0;
+  }
