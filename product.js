@@ -1,4 +1,4 @@
-fetch ('https://crudcrud.com/api/42a430b640084ba5851a5066b1d11d2d/Biodata')
+fetch ('https://crudcrud.com/api/1ccc40a7aa92459589d3574a5aba9d85/Mahasiswa')
 .then((Response) => Response.json())
 .then((data) => {
     const userTable = document.getElementById ('userTable');

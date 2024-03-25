@@ -1,53 +1,90 @@
-.container {
-	max-width: 400px;
-	margin: 50px auto;
-	padding: 20px;
-	background-color: #f9f9f9;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-}
-
-.login-form {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  .container {
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	background: #3581b4;
+  }
+  .container .form {
 	display: flex;
 	flex-direction: column;
-}
-
-label {
-	font-size: 16px;
-	margin-bottom: 10px;
-}
-
-input[type="text"], input[type="password"] {
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
-	font-size: 16px;
-}
-
-button[type="submit"] {
-	padding: 10px 20px;
-	background-color: #1abc9c;
-	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	width: 40%;
+	border-radius: 20px;
+  }
+  .form h1 {
+	text-align: center;
+	margin-top: 11.2px;
+	margin-bottom: 24px;
+  }
+  input[type='email'],
+  input[type='password'] {
 	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+	outline: none;
+	border-bottom: 1px solid;
+	background: none;
+	margin: 14.4px 32px;
 	font-size: 16px;
-}
-
-@media (max-width: 480px) {
+  }
+  label {
+	margin: 0 32px;
+  }
+  span {
+	margin: 0 32px;
+	color: blue;
+	cursor: pointer;
+  }
+  button {
+	margin: 16px;
+	margin-bottom: 24px;
+	padding: 9px;
+	cursor: pointer;
+	border-radius: 16px;
+	border: none;
+	font-size: 17.6px;
+	font-weight: bolder;
+	color: #fff;
+	background: #3581b4;
+  }
+  button:hover {
+	background: #e0ab8c;
+  }
+  
+  @media (max-width: 501px) {
+	html {
+	  font-size: 15px;
+	}
+	.container .form {
+	  width: 300px;
+	}
+  }
+  @media (min-width: 501px) and (max-width: 768px) {
+	html {
+	  font-size: 14px;
+	}
+	.container .form {
+	  width: 450px;
+	}
+  }
+  @media (min-width: 765px) and (max-width: 1200px) {
+	html {
+	  font-size: 18px;
+	}
+	.container .form {
+	  width: 540px;
+	  height: 550px;
+	}
+  }
+  @media (orientation: landscape) and (max-height: 500px) {
 	.container {
-		max-width: 100%;
-		padding: 10px;
+	  height: 100vmax;
 	}
-
-	input[type="text"], input[type="password"] {
-		margin-bottom: 10px;
-	}
-
-	button[type="submit"] {
-		padding: 10px;
-		font-size: 14px;
-	}
-}
+  }
