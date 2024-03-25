@@ -2,6 +2,24 @@
     width: 100%;
     border-collapse: collapse;
   }
+
+  .container {
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    background: #3581b4;
+    }
+    .container .form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 40%;
+    border-radius: 20px;
+    }
   
   #userTable th, #userTable td {
     border: 1px solid black;
